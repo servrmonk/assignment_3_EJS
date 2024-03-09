@@ -19,3 +19,17 @@ exports.postAddProduct = (req, res, next) => {
   products.push({ title: req.body.title }); //but where is product array simple go in admin.js and cut it out const products = []; and paste here
   res.redirect("/");
 };
+
+exports.getProducts = (req, res, next) => {
+  // interacting with the data
+  //   const products = adminData.products; //so we don't need to extract product because we defined product for these page upper line
+  //returning the views
+  res.render("shop", {
+    prods: products,
+    pageTitle: "Shop",
+    path: "/",
+    hasProducts: products.length > 0,
+    activeShop: true,
+    productCSS: true,
+  });
+};

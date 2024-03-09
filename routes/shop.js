@@ -1,24 +1,14 @@
-const path = require('path');
+const path = require("path");
 
-const express = require('express');
+const express = require("express");
 
-const rootDir = require('../util/path');
-const adminData = require('./admin');
+// const rootDir = require("../util/path");
+// const adminData = require("./admin");
 
+// i can emport  product controller from product.js
+const productController = require('../controllers/products')
 const router = express.Router();
-//the logic  here is typical controller logic 
-router.get('/', (req, res, next) => {
-  // interacting with the data 
-  const products = adminData.products;
-  //returning the views
-  res.render('shop', {
-    prods: products,
-    pageTitle: 'Shop',
-    path: '/',
-    hasProducts: products.length > 0,
-    activeShop: true,
-    productCSS: true
-  });
-});
+//the logic  here is typical controller logic
+router.get("/",productController.getProducts );
 
 module.exports = router;
