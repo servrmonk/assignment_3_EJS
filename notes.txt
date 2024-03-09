@@ -1,0 +1,15 @@
+we will skipping  ejs , server side redering is very old and it's not at all used new company r using client side rendering where all html js css load into frontend page is not reloading if u switch or change page and from the backend u just get json 
+
+ejs gives u out of the box , ejs is nothing it has html but it has a power to send variable inside html  and u can write js that is the beauty of ejs, ejs simply jsx of backend 
+ex
+<% if(prods.lenght >0)  %>
+
+
+Model View Controller (MVC)
+Structuring your code
+What is MVC stand's for and what is it 
+-> it's all about separation of concerns , making sure that different part of ur code do different things and u clearly know which part is responsible for what and MVC stands for Models Views Controllers and we already know what is views r in previous project 
+Models r basically object or the part of our code that is responsible for representing ur data in ur code  and allowing u to work with our data (ex svaing data , fetching data etc)
+views r responsible for what the users sees in the code simple html type
+Controller r basically connections point between our models and views Controller r the "in-between" logic, split across middleware functions
+Routes are basically for path for which http method which controler code should execute and controler is which views or model to render
