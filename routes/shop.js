@@ -6,9 +6,11 @@ const rootDir = require('../util/path');
 const adminData = require('./admin');
 
 const router = express.Router();
-
+//the logic  here is typical controller logic 
 router.get('/', (req, res, next) => {
+  // interacting with the data 
   const products = adminData.products;
+  //returning the views
   res.render('shop', {
     prods: products,
     pageTitle: 'Shop',
