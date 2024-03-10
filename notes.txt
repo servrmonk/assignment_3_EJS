@@ -13,3 +13,6 @@ Models r basically object or the part of our code that is responsible for repres
 views r responsible for what the users sees in the code simple html type
 Controller r basically connections point between our models and views Controller r the "in-between" logic, split across middleware functions
 Routes are basically for path for which http method which controler code should execute and controler is which views or model to render
+
+Models
+Create a folder name model 
