@@ -8,7 +8,7 @@ exports.getAddProduct = (req, res, next) => {
     activeAddProduct: true,
   });
 };
-const products = [];
+// const products = [];
 
 exports.postAddProduct = (req, res, next) => {
   // products.push({ title: req.body.title });
